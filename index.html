@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration App</title>
+</head>
+<body>
+    <div class="main-container">
+        <form class="container">
+            <h2>Registration From</h2>
+            <div>
+                <label for="fullname" class="std-data-label">Full Name:</label>
+                <input placeholder="John Doe" type="text" id="fullname" class="std-data" required>
+            </div>
+            <div>
+                <label for="email" class="std-data-label">Email:</label>
+                <input placeholder="example@gmail.com" type="text" id="email" class="std-data" required>
+            </div>
+            <div>
+                <label for="sitelink" class="std-data-label">Your Website:</label>
+                <input placeholder="e.g. johndoe.com" type="text" id="sitelink" class="std-data" required>
+            </div>
+            <div>
+                <label for="imagelink" class="std-data-label">Image Link:</label>
+                <input placeholder="Your Image Link" type="text" id="imagelink" class="std-data" required>
+            </div>
+            <div class="opt">
+                <label for="gender">Gender:</label>
+                <div class="opt-div" id="gender-div">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+        
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                </div>
+            </div>
+            <div class="opt">
+                <label for="skills">Skills:</label>
+                <div class="opt-div">
+                    <input type="checkbox" id="html" name="skills" value="HTML">
+                    <label for="html">HTML</label><br>
+    
+                    <input type="checkbox" id="css" name="skills" value="CSS">
+                    <label for="css">CSS</label><br>
+    
+                    <input type="checkbox" id="js" name="skills" value="JavaScript">
+                    <label for="js">JavaScript</label><br>
+                </div>
+            </div>
+            <div class="btn-div">
+                <input type="button" value="Enroll Student" class="enrollbtn" onclick="enroll()">
+            </div>
+        </form>
+        <div class="enrolled-std" id="enrolled-std">
+            <!-- registered student cards -->
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
